@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Font styles for Poppins */
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+ /* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 100 to 400 */
+
+.playwrite-nl{
+  font-family: "Playwrite NL", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(10 5 33);
+    padding: 0 20px;
+}
+.left {font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    color: rgb(243, 238, 244);
+    
+
+}
+   .left span{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    color: rgb(115, 10, 136);
+    margin: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+nav ul li a:hover {
+    color: rgb(147, 80, 183);
+}
+
+/* Main section styles */
+.home {
+    position: relative;
+}
+
+.home .video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.home .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.home .content {
+  
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Center text */
+    z-index: 10;
+    color: #4a4848;
+    font-family: "Playwrite NL", cursive;
+    font-weight: 400;
+    
+}
+
+.home .content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.home .content .tagline {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.home .controls {
+    position: absolute;
+    bottom: 359px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.home .controls .vid-btn {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.home .controls .vid-btn.active {
+    background-color: var(--orange);
+}
+
+/* Additional styles */
+main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 40px 8px;
+}
+
+
+
+
+
+
+
+
